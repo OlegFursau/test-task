@@ -1,0 +1,61 @@
+.navLink {
+    max-width: 1920;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.navLink__link {
+    display: flex;
+    align-items: center;
+    margin: 46px 0 65px;
+}
+
+.navLink__left {
+    text-decoration: none;
+    font-family: "Euclid Circular A";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: gray;
+    text-align: center;
+}
+
+.navLink__rigth {
+    text-decoration: none;
+    font-family: "Euclid Circular A";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: black;
+    text-align: center;
+}
+
+.navLink__Item {
+    margin-bottom: 58px;
+}
+
+.navLink__text {
+    font-family: "Euclid Circular A";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.navLink__counter {
+    display: none;
+    gap: 5px;
+    align-items: center;
+    font-family: "Euclid Circular A";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 15px 0 31px;
+}
+
+.navLink__number {
+    color: black;
+}
+
+.navLink__subText {
+    color: gray;
+}

@@ -1,0 +1,54 @@
+//Imports
+@import "./style/var";
+@import "./style/grid";
+@import "./style/header";
+@import "./style/nav";
+@import "./style/advert";
+@import "./style/navLink";
+@import "./style/main";
+@import "./style/filter";
+//main
+body {
+    margin: 0;
+    background-color: $colorBody;
+    font-size: 10px;
+    color: $colorMainText;
+    font-family: "Euclid Circular A";
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+*,
+* ::before,
+::after {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+@media (max-width: 880px) {
+    body {
+        margin: 0;
+        padding: 0 5px;
+    }
+}

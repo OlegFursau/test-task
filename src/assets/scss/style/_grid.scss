@@ -1,0 +1,17 @@
+.header__grid {
+    display: grid;
+    grid-template-columns: 32px 275.4px auto 157px;
+    grid-template-rows: 65.9px;
+    gap: 74px;
+}
+
+.nav__block {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 115px;
+}
+
+.advert__grid {
+    display: grid;
+    grid-template-columns: 577px 633px 1fr;
+}

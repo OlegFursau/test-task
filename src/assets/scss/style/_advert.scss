@@ -1,0 +1,129 @@
+.advert {
+    background: linear-gradient(to right, #17a8bb 25%, #9ff4ff);
+}
+
+.advert__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0px 100px;
+}
+
+.advert__discribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.advert__item {
+    font-family: "Euclid Circular A";
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+    max-width: 577px;
+}
+
+.advert__text {
+    font-family: "Euclid Circular A";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    margin-top: 15px;
+    max-width: 579px;
+}
+
+.advert__img {
+    display: flex;
+    justify-content: center;
+}
+
+.advert__image {
+    max-width: 100%;
+    padding-right: 200px;
+}
+
+.advert__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advert__link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-family: "Euclid Circular A";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $colorMainText;
+    padding: 20px 40px;
+    background: white;
+    &:hover {
+        box-shadow: 0 0 15px gray;
+        transition: .2s linear;
+    }
+}
+
+.advert__linkText {
+    margin-left: 36px;
+}
+
+//media
+@media (max-width: 1424px) {
+    .advert__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        //gap: 20px;
+    }
+    .advert__container {
+        padding: 0;
+    }
+    .advert__discribe {
+        align-items: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0;
+    }
+    .advert__image {
+        padding-right: 100px;
+    }
+    .advert__img {
+        //max-width: 100%;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .advert__btn {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .header {
+        padding: 20px 0 0 0;
+    }
+    .header__grid {
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .header__input {
+        align-items: flex-end;
+    }
+}
+
+@media(max-width: 520px) {
+    .advert__item {
+        font-size: 28px;
+        margin-top: 41px;
+    }
+    .advert__text {
+        font-size: 15px;
+        text-align: center;
+    }
+    .advert__image {
+        padding-right: 5px;
+        text-align: center;
+    }
+    .advert__link {
+        padding: 17px 37px;
+    }
+}
